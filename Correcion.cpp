@@ -1,42 +1,19 @@
-# include <stdio.h>
-# include <conio.h>
-# include <stdlib.h>
-void main ()
-{
-int a,b,op;
-do
-{
+
+#include <stdio.h>
+#include <time.h>
+#include <conio.h>
 
 
- cprintf("ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO\n ");
- cprintf("MI AGENDA\n");
- cprintf("ESCUELA DE INFORMATICA Y ELECTRONICA\n ");
- cprintf("INGENIERIA EN TELECOMUNICACIONES Y REDES \n");
+int main(int argc,char* argv[]) {
 
- cprintf("\n 1. INGRESE NUEVO EVENTO ");
- cprintf("\n 2. VER MIS EVENTOS PARA HOY");
- cprintf("\n 3. VER MIS EVENTOS TODA LA SEMANA");
- cprintf("\n 4. SALIR");
- cprintf("\n INGRESE SU OPCION:  ");
- scanf("%d",&a);
-switch(a)
-{
-   case 1:          
-     {              char evento[20];
-                    printf("NOMBRE DEL EVENTO:" );
-                    scanf("%s ", evento);
-                    char desc[50];
-                    printf(" DESCRIPCION DEL EVENTO:" );
-                    scanf("%s ",desc);
-			break;
-			}
-       }
-       printf("\n \n QUIERE REGRESAR AL PRIMER MENU:  ");
-       scanf("%d",&op);
-
-   }
-    while(op==1);
-     getch();
-    }
+        time_t tiempo = time(0);
+        struct tm *tlocal = localtime(&tiempo);
+        char output[128];
+        strftime(output,128,"%d/%m/%y %H:%M:%S",tlocal);
+        printf("%s\n",output);
+        int anioactual = tlocal->tm_year;
+        int mesactual = tlocal->tm_mon;
+        getch();
+}
 
 
