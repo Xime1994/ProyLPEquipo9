@@ -74,7 +74,7 @@ case 1: {
 
 break;
 }
-         printf("\n \n QUIERE REGRESAR AL PRIMER MENU:  ");
+         printf("\n \n QUIERE REGRESAR AL PRINCIPIO:  ");
        scanf("%d",&op);
 
    }
