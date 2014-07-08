@@ -3,6 +3,8 @@
 # include <stdlib.h>
 # include <iostream.h>
 
+// crear el archivo
+
 struct fecha{   //STRUCT
   char anio[3];
   char mes[3];
@@ -66,15 +68,32 @@ switch(a)
   puts("INGRESE LOS MINUTOS");
   gets(registro.fechaf.min);
   eventos[1]=registro;
+  // abri el archivo
 
 
 
 			break;
 			}
   case 2: {
-         //sacar fecha del sistema
-         for ( i=1;i<=20;i++)
+
+
+
+             AI=atoi(registro.fechai.anio); // transformar de char a int
+             MI=atoi(registro.fechai.mes);
+             DI=atoi(registro.fechai.dia);
+	          HI=atoi(registro.fechai.hora);
+	          MINI=atoi(registro.fechai.min);
+	          AF=atoi(registro.fechaf.anio);
+	          MF=atoi(registro.fechaf.mes);
+	          DF=atoi(registro.fechaf.dia);
+	          HF=atoi(registro.fechaf.hora);
+             AF=atoi(registro.fechaf.min);  // revisar si ejecuto de una el case 2 tomar del archivo y no de la variable registro
+
+
+
+	 for ( i=1;i<=20;i++)
          {
+
           if((aa==registro.fechai.anio)&&(ma==registro.fechai.mes)&&(da==registro.fechai.dia))
           {
             puts("EVENTO");
@@ -114,7 +133,3 @@ switch(a)
     while(op==1);
      getch();
     }
-
-
-
-

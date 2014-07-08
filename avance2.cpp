@@ -3,6 +3,9 @@
 # include <stdlib.h>
 # include <iostream.h>
 
+// crear el archivo
+
+
 struct fecha{   //STRUCT
   char anio[3];
   char mes[3];
@@ -38,10 +41,10 @@ do
  cin>>a;
 switch(a)
 {
-   case 1: {
-   puts("INGRESE EL EVENTO");
-   gets(registro.evento);
-   puts("INGRESE LA DESCRIPCION");
+case 1: {
+  puts("INGRESE EL EVENTO");
+  gets(registro.evento);
+  puts("INGRESE LA DESCRIPCION");
   gets(registro.desc);
   puts("INGRESE LA FECHA DE INICIO");
   puts("INGRESE EL ANIO");
@@ -66,16 +69,33 @@ switch(a)
   puts("INGRESE LOS MINUTOS");
   gets(registro.fechaf.min);
   eventos[1]=registro;
+  // abri el archivo
 
 
 
 			break;
 			}
   case 2: {
-         //sacar fecha del sistema
-         for ( i=1;i<=20;i++)
+              int i ;
+             int    aia, mia, dia, hia, mina, afa, mfa, dfa, hfa, minf;
+				 aia=atoi(registro.fechai.anio); // transformar de char a int
+             mia=atoi(registro.fechai.mes);
+             dia=atoi(registro.fechai.dia);
+	          hia=atoi(registro.fechai.hora);
+	          mina=atoi(registro.fechai.min);
+	          afa=atoi(registro.fechaf.anio);
+	          mfa=atoi(registro.fechaf.mes);
+	          dfa=atoi(registro.fechaf.dia);
+	          hfa=atoi(registro.fechaf.hora);
+             minf=atoi(registro.fechaf.min);  // revisar si ejecuto de una el case 2 tomar del archivo y no de la variable registro
+
+
+
+	 for ( i=1;i<=20;i++)
          {
-          if((aa==registro.fechai.anio)&&(ma==registro.fechai.mes)&&(da==registro.fechai.dia))
+
+
+          if((aia==registro.fechai.anio)&&(mia==registro.fechai.mes)&&(dia==registro.fechai.dia) &&(hia==registro.fechai.dia)&&(mina==registro.fechai.dia))
           {
             puts("EVENTO");
             puts(regitro.evento);
@@ -114,7 +134,3 @@ switch(a)
     while(op==1);
      getch();
     }
-
-
-
-
