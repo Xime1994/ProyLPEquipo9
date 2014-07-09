@@ -45,7 +45,8 @@ int main(int argc,char* argv[])
  		printf("\n       ESCUELA DE INFORMATICA Y ELECTRONICA ");
  		printf("\n   INGENIERIA EN TELECOMUNICACIONES Y REDES ");
  		printf("\n\n 1. INGRESE NUEVO EVENTO ");
-      printf("\n\n 2. VER MIS EVENTOS PARA HOY");
+                printf("\n\n 2. VER MIS EVENTOS PARA HOY");
+                printf("\n\n MENU: ")
  		printf("\n\n 3. VER MIS EVENTOS TODA LA SEMANA");
 	   printf("\n\n 4. SALIR");
  		printf("\n\n INGRESE SU OPCION:  ");
