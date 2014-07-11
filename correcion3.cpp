@@ -40,15 +40,13 @@ int main(int argc,char* argv[])
     {
 
 
- 		printf("\n    ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO ");
- 		printf("\n                    MI AGENDA");
- 		printf("\n       ESCUELA DE INFORMATICA Y ELECTRONICA ");
- 		printf("\n   INGENIERIA EN TELECOMUNICACIONES Y REDES ");
- 		
- 		
- 		printf("\n\n MENU: ")
+ 		printf("\n                ESCUELA SUPERIOR POLITECNICA DE CHIMBORAZO ");
+ 		printf("\n                                 MI AGENDA");
+ 		printf("\n                  ESCUELA DE INFORMATICA Y ELECTRONICA ");
+ 		printf("\n                INGENIERIA EN TELECOMUNICACIONES Y REDES ");
+      printf("\n\n\n  MENU: ");
  		printf("\n\n 1. INGRESE NUEVO EVENTO ");
-                printf("\n\n 2. VER MIS EVENTOS PARA HOY");
+      printf("\n\n 2. VER MIS EVENTOS PARA HOY");
  		printf("\n\n 3. VER MIS EVENTOS TODA LA SEMANA");
 	   printf("\n\n 4. SALIR");
  		printf("\n\n INGRESE SU OPCION:  ");
@@ -58,31 +56,31 @@ switch(a)
 	case 1: {
    				cr++;
 
-  					puts("\n INGRESE EL EVENTO");
+  					puts("\n INGRESE EL EVENTO: ");
   					gets(registro.evento);
-               puts("\n INGRESE LA DESCRIPCION");
+               puts("\n INGRESE LA DESCRIPCION: ");
                gets(registro.desc);
- 				   puts("\n\n\n   INGRESE LA FECHA DE INICIO");
-  					puts("\n INGRESE EL ANIO");
+ 				   puts("\n\n\n   INGRESE LA FECHA DE INICIO: ");
+  					puts("\n INGRESE EL ANIO: ");
  				   gets(registro.fechai.anio);
-  					puts("\n INGRESE EL MES");
+  					puts("\n INGRESE EL MES: ");
   					gets(registro.fechai.mes);
-  					puts("\n INGRESE EL DIA");
+  					puts("\n INGRESE EL DIA: ");
   					gets(registro.fechai.dia);
-  					puts("\n INGRESE LA HORA");
+  					puts("\n INGRESE LA HORA: ");
   					gets(registro.fechai.hora);
- 				   puts("\n INGRESE LOS MINUTOS");
+ 				   puts("\n INGRESE LOS MINUTOS: ");
  				   gets(registro.fechai.min);
-  					puts("\n\n \n  INGRESE LA FECHA DE FINALIZACION");
-  					puts("\n\ INGRESE EL ANIO");
+  					puts("\n\n \n  INGRESE LA FECHA DE FINALIZACION: ");
+  					puts("\n\ INGRESE EL ANIO: ");
   					gets(registro.fechaf.anio);
-  					puts("\n INGRESE EL MES");
+  					puts("\n INGRESE EL MES: ");
   					gets(registro.fechai.mes);
-  					puts("\n INGRESE EL DIA");
+  					puts("\n INGRESE EL DIA: ");
   					gets(registro.fechaf.dia);
-  					puts("\n INGRESE LA HORA");
+  					puts("\n INGRESE LA HORA: ");
                gets(registro.fechaf.hora);
-  					puts("\n INGRESE LOS MINUTOS");
+  					puts("\n INGRESE LOS MINUTOS: ");
   					gets(registro.fechaf.min);
   					eventos[cr]=registro;
   // abri el archivo
@@ -107,17 +105,17 @@ switch(a)
                 {
 
                   registro=eventos[i];
-            		puts("\n\n EVENTO");
+            		puts("\n\n EVENTO: ");
             		puts(registro.evento);
-            		puts("\n\n DESCRIPCION");
+            		puts("\n\n DESCRIPCION: ");
             		puts(registro.desc);
-            		puts("\n\n DESDE");
+            		puts("\n\n DESDE: ");
             		puts(registro.fechai.anio);
             		puts(registro.fechai.mes);
             		puts(registro.fechai.dia);
             		puts(registro.fechai.hora);
             		puts(registro.fechai.min);
-            		puts("\n\n HASTA");
+            		puts("\n\n HASTA:");
             		puts(registro.fechaf.anio);
             		puts(registro.fechaf.mes);
             		puts(registro.fechaf.dia);
@@ -185,7 +183,7 @@ switch(a)
             			getch();
                      }
                     }
-                     
+
 
 
 
@@ -200,4 +198,3 @@ switch(a)
        scanf("%d",&op);
        getch();
     }
-
